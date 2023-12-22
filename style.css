@@ -1,31 +1,39 @@
 body {
     background-color: black;
-    color: rgba(237, 235, 235, 0.887);
-    font-weight: 300;
+    color: white;
+    font-weight: lighter;
     text-align: center;
-    font-family: sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.08rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 
 .mainvisual {
     display: flex;
-    width: clac(100%/3);
-    height: 900px;
+    
+}
+
+.mainvisual img {
+    /* height: 530px; */
+    width: calc(100%/3);
+
 }
 
 .hello {
 margin:100px 0px ;
-font-size: 80px;
-
-
+font-size: 90px;
 
 }
 
 .title {
-margin: 45px 0px;
-font-size: 50PX;
-text-decoration: underline solid  white;
+margin: 60px 10px;
+font-weight: lighter;
+font-size: 50px;
+text-decoration: underline  solid   white;
+text-underline-offset: 20%;
+
 
 }
 
@@ -35,11 +43,94 @@ text-decoration: underline solid  white;
 }
 
 .place {
-    margin: 20px;
+    margin: 30px;
     font-size: 30px;
+    font-weight: bold;
 }
 
 .mini {
     font-size: 16px;
     font-weight: lighter;
+}
+
+.gallery {
+    max-width: 1000px;
+    align-items: center; /*  センターに来ない。。。 */
+}
+
+
+.gallery img{
+    width:50%;
+    margin:25px;
+    
+} 
+
+.left { 
+    display: flex;
+    justify-content: flex-start;
+    margin:20px;
+
+}
+
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    margin:20px;
+
+} 
+
+.access {
+    background-image:url(img/bg.jpg);
+    height: 1400px;
+
+}
+
+.accessbody a {
+    border:1px solid white;
+    padding:20px 50px;
+    margin-top:20px; /*   きいてない！ */
+    
+}
+
+.accessbody ul {
+    margin-bottom: 50px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+}
+
+.contact a {
+    border:1px solid gray;
+    padding:30px;
+    margin: 15px;
+    width:440px;
+
+}
+
+
+
+footer {
+    border-top: solid white;
+    padding: 80px 40px;
+    text-align: left;
+    font-size: 13px;
+    
+}
+
+.sns {
+    margin-top: 30px;
+}
+
+footer a {
+    margin: 0px 10px;
+    
+}
+
+footer ul {
+    margin:0px 30px;
 }
