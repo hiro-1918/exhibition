@@ -1,6 +1,0 @@
-
-
-        $(mainvisual).on('scroll', function(){
-            $(img).css('width', '2000px');
-    
-});
