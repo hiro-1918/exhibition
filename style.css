@@ -67,6 +67,8 @@ text-underline-offset: 20%;
     
 } 
 
+
+
 .left { 
     display: flex;
     justify-content: flex-start;
@@ -82,8 +84,23 @@ text-underline-offset: 20%;
 
 } 
 
+
+.no1 {
+    display:none ;
+}
+
+.no2 {
+    display:none ;
+}
+
+.no3 {
+    display:none ;
+}
+
+
 .access {
-    height: 1400px;
+    height: 1250px;
+    margin-top: 250px;
 
 }
 
