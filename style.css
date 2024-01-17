@@ -55,6 +55,7 @@ text-underline-offset: 20%;
 
 .gallery {
     max-width: 1000px;
+    height:1000px;
     margin: 0 auto;
     z-index: 2;
     position: relative;

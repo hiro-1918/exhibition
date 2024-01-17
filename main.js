@@ -5,9 +5,6 @@ $(function(){
         console.log(scroll);
         let accesstop = $(".access").offset().top;
 
-        
-
-
 
         if(scroll>(accesstop-200)){
             if(scroll>4250){
@@ -47,7 +44,18 @@ $(function(){
         let scroll = $(window).scrollTop();
 
         console.log(scroll);
-        let no1top = $(".no1").offset().top;
+        let gallerytop = $(".gellery").offset().top;
+
+        if(scroll>(gallerytop)){
+            if(scroll>3000){
+                $(".no1").fadeOut(600);
+            }else{
+                $(".no1").fadeIn(600);
+            }
+        
+        }else{
+            $(".no1").fadeOut(600);
+        }
 
         
     });
