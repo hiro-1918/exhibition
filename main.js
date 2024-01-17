@@ -6,8 +6,8 @@ $(function(){
         let accesstop = $(".access").offset().top;
 
 
-        if(scroll>(accesstop-300)){
-            if(scroll>5000){
+        if(scroll>(accesstop-200)){
+            if(scroll>6700){
                 $(".accessback").fadeOut(600);
             }else{
                 $(".accessback").fadeIn(600);
