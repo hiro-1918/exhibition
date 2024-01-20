@@ -21,6 +21,10 @@ body {
 
 }
 
+.big {
+    width:150%;
+}
+
 .hello {
 margin:100px 0px ;
 font-size: 90px;

@@ -17,24 +17,14 @@ $(function(){
             $(".accessback").fadeOut(600);
         }
 
-        // if(scroll>6000){
-        //     $(".accessback").fadeOut(600);
-        // }else{
-        //     $(".accessback").fadeIn(600);
-        // }
+        // let visuwidth = $(".mainvisual").offset().width;
+        // if(scroll>50){
+        //     if(scroll>1000){
+        //         $(".mainvisual").each(function(){
+        //         visuwidth + scroll/3}
+        //         )};
+        // };
 
-
-        // if(scroll>1600){
-        //     $(".no1").fadeIn(500);
-        // }
-
-        // if(scroll>2000){
-        //     $(".no2").fadeIn(500);
-        // }
-
-        // if(scroll>2800){
-        //     $(".no3").fadeIn(500);
-        // }
 
     });
 });
@@ -75,3 +65,11 @@ $(function(){
             });
         });
     });
+
+$(function(){
+    $(window).scroll(function(){
+        $(".mainvisual").each(function(){
+            if(scroll >)
+        });
+    })
+});
