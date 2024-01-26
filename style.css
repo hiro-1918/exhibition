@@ -6,24 +6,26 @@ body {
     line-height: 1.5;
     letter-spacing: 0.08rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
 }
 
 
 
 .mainvisual {
     display: flex;
+    justify-content: center;
 
 }
 
 .mainvisual img {
     /* height: 530px; */
-    width: calc(100%/3);
+    /* width: calc(100%/3); */
+    height: 100vh;
+    object-fit: cover;
 
 }
 
-.big {
-    width:150%;
-}
+
 
 .hello {
 margin:100px 0px ;
@@ -171,6 +173,35 @@ text-underline-offset: 20%;
 
 }
 
+.arrow {
+    color: white;
+
+
+}
+
+.arrow2 {
+    color: white;
+}
+
+.side {
+    display: none;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -162px;
+    top: 630px;
+    
+}
+
+.side2{
+    display:flex
+}
+
+.visitor ,.exhibitior{
+    border-style: solid;
+    color: white;
+    width: 180px;
+    line-height: 40px;
+}
 
 
 footer {
