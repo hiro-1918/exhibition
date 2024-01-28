@@ -23,6 +23,18 @@ $(function(){
         });
         
         
+        $(`.fadein`).each(function(){
+            var trangetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if(scroll > trangetElement - windowHeight + 150){
+                $(this).addClass(`scrollin`);
+            }
+        });
+        
+        
+        
+        
         $('.side').css({
             top:(scroll+630)+"px"
         });
@@ -48,53 +60,44 @@ $(function(){
         // }else{
         //     $('.side').removeClass('side2');
         // };
-
-        
         
     });
+    
+    
     $('.mainvisual img').css({
         width:100/3+"%"
     });
     
     
-    
-    
-});
-
-// $(function(){
-//     $(window).on('scroll',function(){
-//         let scroll = $(window).scrollTop();
-
-//         console.log(scroll);
-//         let gallerytop = $(".gellery").offset().top;
-
-//         if(scroll>(gallerytop)){
-//             if(scroll>3000){
-//                 $(".no1").fadeOut(600);
-//             }else{
-//                 $(".no1").fadeIn(600);
-//             }
-
-//         }else{
-//             $(".no1").fadeOut(600);
-//         }
-
-
-//     });
-// });
-
-
-
-$(function(){
-    $(window).scroll(function(){
-        $(`.fadein`).each(function(){
-            var trangetElement = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            if(scroll > trangetElement - windowHeight + 150){
-                $(this).addClass(`scrollin`);
-            }
+    $('#contact1').hover(
+        function(){
+            $('.arrow').addClass('rightfade');
+            $('.arrowsub').addClass('rightfade');
+            $('#contact1').addClass('gray');
+        },
+        function(){
+            $('.arrow').removeClass('rightfade');
+            $('.arrowsub').removeClass('rightfade');
+            $('#contact1').removeClass('gray');
         });
-    });
-});
+        
+    
+    $('#contact2').hover(
+        function(){
+            $('.arrow2').addClass('rightfade');
+            $('.arrow2sub').addClass('rightfade');
+            $('#contact2').addClass('gray');
+        },
+        function(){
+            $('.arrow2').removeClass('rightfade');
+            $('.arrow2sub').removeClass('rightfade');
+            $('#contact2').removeClass('gray');
+        });
 
+
+    });
+        
+        
+        
+        
+        
