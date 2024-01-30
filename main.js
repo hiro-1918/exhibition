@@ -2,6 +2,17 @@ $(function(){
     $(window).on('scroll',function(){
         let scroll = $(window).scrollTop();
         
+        $('.header').css({
+        top:(scroll+10)+"px"
+        });
+
+        if(scroll>650){
+            $('.header').fadeIn(600);
+        }else{
+            $('.header').fadeOut(600);
+        };
+
+
         console.log(scroll);
         let accesstop = $(".access").offset().top;
         
@@ -72,12 +83,12 @@ $(function(){
     $('#contact1').hover(
         function(){
             $('.arrow').addClass('rightfade');
-            $('.arrowsub').addClass('rightfade');
+            // $('.arrowsub').addClass('subgray');
             $('#contact1').addClass('gray');
         },
         function(){
             $('.arrow').removeClass('rightfade');
-            $('.arrowsub').removeClass('rightfade');
+            // $('.arrowsub').removeClass('subgray');
             $('#contact1').removeClass('gray');
         });
         
@@ -85,12 +96,12 @@ $(function(){
     $('#contact2').hover(
         function(){
             $('.arrow2').addClass('rightfade');
-            $('.arrow2sub').addClass('rightfade');
+            // $('.arrow2sub').addClass('rightfade').addClass('transform');
             $('#contact2').addClass('gray');
         },
         function(){
             $('.arrow2').removeClass('rightfade');
-            $('.arrow2sub').removeClass('rightfade');
+            // $('.arrow2sub').removeClass('rightfade').removeClass('transform');
             $('#contact2').removeClass('gray');
         });
 
