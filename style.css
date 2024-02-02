@@ -262,15 +262,15 @@ text-underline-offset: 20%;
     padding:30px;
     margin: 15px;
     width:440px;
-
+    position: relative;
 }
 
 .arrow {
     color: white;
     letter-spacing: 0;
     position: absolute;
-    top: 44px;
-    right: 107px;
+    top: 25px;
+    right: -40px;
     
 }
 
@@ -288,8 +288,8 @@ text-underline-offset: 20%;
     color: white;
     letter-spacing: 0;
     position: absolute;
-    top: 157px;
-    right: 107px;
+    top: 22px;
+    right: -36px;
    
 }
 
@@ -363,4 +363,74 @@ footer a {
 
 footer ul {
     margin:0px 30px;
+}
+
+
+@media screen and (max-width:700px){
+
+.mainvisual img {
+    width:100%;
+
+}
+
+.hello {
+    font-size: 38px;
+    margin:auto;
+}
+
+.title {
+    margin:35px 10px;
+    font-size: 28px;
+}
+
+.day {
+    font-size: 14px;
+}
+
+.place {
+    margin: 14px;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.mini {
+    font-size: 13px;
+}
+
+.gallery img {
+    width:90% ;
+    margin:15px auto ;
+}
+
+.right , .left {
+    display:block ;
+    margin:0px ;
+}
+
+.access {
+    height: 1000px;
+    margin-top: 250px;
+    padding-top:20px;
+}
+
+
+
+.arrow , .arrowsub , .arrow2 , .arrow2sub {
+    display: none ;
+}
+
+.contact {
+    margin: 40px auto;
+}
+
+.contact a {
+    width: 87%;
+}
+
+.side2 {
+    display:none ;
+}
+
+
+
 }
