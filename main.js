@@ -22,12 +22,14 @@ $(function(){
         let accesstop = $(".access").offset().top;
         
         
-        if(scroll>(accesstop-200)){
-            if(scroll>6500){
-                $(".accessback").fadeOut(600);
-            }else{
-                $(".accessback").fadeIn(600);
-            }
+        if(scroll>(accesstop)){
+            console.log (accesstop);
+            $(".accessback").fadeIn(600);
+            // if(scroll>(accesstop+900)){
+            //     $(".accessback").fadeOut(600);
+            // }else{
+            //     $(".accessback").fadeIn(600);
+            // }
             
         }else{
             $(".accessback").fadeOut(600);
