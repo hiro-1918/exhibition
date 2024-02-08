@@ -1,4 +1,5 @@
 $(function(){
+    var wid = $(window).width();  
     $(window).on('scroll',function(){
         let scroll = $(window).scrollTop();
         
@@ -63,6 +64,7 @@ $(function(){
         });
         
         
+        if(wid > 700){
         
         
         $('.side').css({
@@ -79,11 +81,13 @@ $(function(){
         }else{
             $('.side').fadeOut(400);
         };
+    }else {
+        $('.side').hide();
+    };
         
     });
-    
+     
 
-    var wid = $(window).width();   
 
     if(wid < 700){
         $('.mainvisual img').css({
